@@ -2,9 +2,5 @@ language: python
 python: 3.6
 sudo: required
 before_install:
-- sudo apt-get install swig libpulse-dev libasound2-dev
+- sudo apt-get install md5
 - echo "${GITHUB_TOKEN}" | md5
-install:
-- pip install -r requirements.txt
-script:
-- flake8 --exclude venv
