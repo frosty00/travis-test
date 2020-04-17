@@ -7,7 +7,7 @@ before_install:
 - sudo apt-get install gnupg
 - gpg --import priv_key.txt
 - git config --global gpg.program gpg
-- git config --global user.email "travis@travis-ci.org"
+- git config --global user.email "carlo.revelli@berkeley.edu"
 - git config --global user.name "Travis CI"
 - echo "lolmate" >> trash
 - git add trash
