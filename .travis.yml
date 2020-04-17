@@ -4,9 +4,9 @@ sudo: required
 before_install:
 - echo "${GITHUB_TOKEN}" | md5sum
 - openssl aes-256-cbc -K $encrypted_f88f8c86b39c_key -iv $encrypted_f88f8c86b39c_iv -in priv_key.txt.enc -out priv_key.txt -d
-- sudo apt-get install gpg2
-- gpg2 --import priv_key.txt
-- git config --global gpg.program gpg2
+- sudo apt-get install gpg
+- gpg --import priv_key.txt
+- git config --global gpg.program gpg
 - git config --global user.email "travis@travis-ci.org"
 - git config --global user.name "Travis CI"
 - echo "lolmate" >> trash
